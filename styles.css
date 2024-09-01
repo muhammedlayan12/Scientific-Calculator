@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    border-radius: 40px;
+    background: linear-gradient(145deg, #2c2c2c, #1c1c1c); /* Sleek dark gradient */
+    width: 350px;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4), -8px -8px 20px rgba(255, 255, 255, 0.2); /* Subtle 3D effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calculator input {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 24px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 20px;
+    text-align: right;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2), inset -4px -4px 10px rgba(255, 255, 255, 0.1); /* Inner shadow for input */
+}
+
+.button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.calculator button {
+    background-color: #333333; /* Dark button background */
+    color: white;
+    font-size: 18px;
+    height: 60px;
+    border: none;
+    border-radius: 50%; /* Circular buttons */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.1); /* 3D button effect */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background-color: #555555; /* Slightly lighter on hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), -2px -2px 5px rgba(255, 255, 255, 0.1); /* Slight depth change on hover */
+}
+
+.calculator button:active {
+    background-color: #1e1e1e; /* Darker color on click */
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.4), inset -4px -4px 10px rgba(255, 255, 255, 0.1); /* Depressed effect on click */
+}
+
+button[style*="background-color: gray"] {
+    background-color: #555555 !important; /* Apply gray buttons with a matching dark theme */
+}
+
+button[style*="background-color: orange"] {
+    background-color: #ff9500 !important; /* Orange buttons similar to iPhone's calculator */
+    color: white;
+}
